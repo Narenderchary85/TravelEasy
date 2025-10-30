@@ -1,73 +1,80 @@
-# React + TypeScript + Vite
+<h2>Live Demo<h2>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[Click here to view the live demo](https://traveleasy-a7ye.onrender.com)
+  
+<h1>Blogs Page</h1>
 
-Currently, two official plugins are available:
+![Alt Text](https://github.com/Narenderchary85/BlogNest_F/blob/main/public/blogspage.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<h1>Add Blogs</h1>
 
-## React Compiler
+![Alt Text](https://github.com/Narenderchary85/BlogNest_F/blob/main/public/addblogs.png)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+<h1>BlogCard</h1>
 
-## Expanding the ESLint configuration
+![Alt Text](https://github.com/Narenderchary85/BlogNest_F/blob/main/public/blogcard.png)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+<h1>Myprofile</h1>
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+![Alt Text](https://github.com/Narenderchary85/BlogNest_F/blob/main/public/myprofile.png)
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+<h1>Edit Profile</h1>
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+![Alt Text](https://github.com/Narenderchary85/BlogNest_F/blob/main/public/editprofile.png)
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+<h1>Bookmarks</h1>
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+![Alt Text](https://github.com/Narenderchary85/BlogNest_F/blob/main/public/bookmarks.png)
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Installation and Setup
+
+### Backend Repository Setup
+
+1. **Clone the Backend Repository:**
+   ```bash
+   git clone https://github.com/Narenderchary85/BlogNest_backend
+   cd BlogNest_backend
+   
+2.  **Install Dependencies:**
+     ```bash
+      npm install
+
+3.  **Environment Variables Setup:**
+     ```bash
+      PORT=1000
+      MONGO_URL=mongodb://localhost:27017/blogwave
+      KEY=your_super_secret_jwt_key_here
+      CLOUDINARY_CLOUD_NAME=your_cloudinary_cloud_name
+      CLOUDINARY_API_KEY=your_cloudinary_api_key
+      CLOUDINARY_API_SECRET=your_cloudinary_api_secret
+      FRONTEND_URL=http://localhost:5173
+4. **Cloudinary Setup:**
+     ```bash
+        Create a free account at Cloudinary
+        Get your Cloud Name, API Key, and API Secret from the dashboard
+        Add them to your backend .env file
+     
+5. **Start the Backend Server:**
+     ```bash
+          npm start
+          The backend will run on: http://localhost:1000
+
+### Frontend Repository Setup
+
+1. **Clone the Frontend Repository:**
+     ```bash
+      git clone https://github.com/Narenderchary85/BlogNest
+      cd folder-name
+2. **Install Dependencies:**
+     ```bash
+        npm install
+3. **3.	Environment Variables Setup:**
+     ```bash
+          VITE_API_URL=http://localhost:1000
+
+4. **Start the Frontend Development Server:**
+     ```bash
+          npm run dev
+          The frontend will run on http://localhost:5173
+
+
