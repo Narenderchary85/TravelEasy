@@ -21,7 +21,7 @@ const ExperiencesList: React.FC = () => {
   useEffect(() => {
     const fetchExperiences = async () => {
       try {
-        const res = await axios.get("http://localhost:1000/exp/allexp");
+        const res = await axios.get("https://traveleasy-b.onrender.com/exp/allexp");
         setExperiences(res.data);
         setFiltered(res.data);
       } catch (err) {

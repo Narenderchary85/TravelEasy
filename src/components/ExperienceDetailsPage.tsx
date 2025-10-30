@@ -38,7 +38,7 @@ const ExperienceDetailsPage: React.FC = () => {
   useEffect(() => {
     const fetchExperience = async () => {
       try {
-        const res = await axios.get(`http://localhost:1000/exp/expcard/${id}`);
+        const res = await axios.get(`https://traveleasy-b.onrender.com/exp/expcard/${id}`);
         setExp(res.data);
       } catch (err) {
         console.error("Error fetching experience:", err);
@@ -72,7 +72,7 @@ const ExperienceDetailsPage: React.FC = () => {
       <div className="max-w-6xl mx-auto py-10 px-4 flex flex-col md:flex-row gap-10">
         <div className="md:w-2/3">
           <img
-            src={`http://localhost:1000/upload/${exp.image}`}
+            src={`https://traveleasy-b.onrender.com/upload/${exp.image}`}
             alt={exp.expname}
             className="w-full h-100 object-cover rounded-2xl"
           />

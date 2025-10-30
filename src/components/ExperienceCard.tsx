@@ -23,7 +23,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({
     <div className="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition"
     onClick={() => navigate(`/experience/${_id}`)}>
       <img
-        src={`http://localhost:1000/upload/${image}`}
+        src={`https://traveleasy-b.onrender.com/upload/${image}`}
         alt={expname}
         className="w-full h-48 object-cover"
       />
