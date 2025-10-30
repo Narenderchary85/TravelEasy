@@ -11,7 +11,6 @@ const Checkoutpage = () => {
   const [userEmail, setUserEmail] = useState("");
   const [promoCode, setPromoCode] = useState("");
   const [agreed, setAgreed] = useState(false);
-  const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
   const [discount, setDiscount] = useState(0);
@@ -41,7 +40,6 @@ const Checkoutpage = () => {
 
     try {
         console.log("Booking successful:", exp);
-      setLoading(true);
       const response = await axios.post("https://traveleasy-b.onrender.com/exp/book", {
         experienceId: exp._id,
         userName,
@@ -57,7 +55,7 @@ const Checkoutpage = () => {
       console.error(err);
       alert(err.response?.data?.message || "Booking failed");
     } finally {
-      setLoading(false);
+      console.log("Booking attempt finished.");
     }
   };
 
