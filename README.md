@@ -2,29 +2,29 @@
 
 [Click here to view the live demo](https://traveleasy-a7ye.onrender.com)
   
-<h1>Blogs Page</h1>
+<h1>Home Page</h1>
 
-![Alt Text](https://github.com/Narenderchary85/BlogNest_F/blob/main/public/blogspage.png)
+![Alt Text](https://github.com/Narenderchary85/TravelEasy/blob/main/public/page.Homepng)
 
-<h1>Add Blogs</h1>
+<h1>Details</h1>
 
-![Alt Text](https://github.com/Narenderchary85/BlogNest_F/blob/main/public/addblogs.png)
+![Alt Text](https://github.com/Narenderchary85/TravelEasy/blob/main/public/Detailspage.png)
 
-<h1>BlogCard</h1>
+<h1>Slot Booking</h1>
 
-![Alt Text](https://github.com/Narenderchary85/BlogNest_F/blob/main/public/blogcard.png)
+![Alt Text](https://github.com/Narenderchary85/TravelEasy/blob/main/public/BookingSlot.png)
 
-<h1>Myprofile</h1>
+<h1>Checkout Page</h1>
 
-![Alt Text](https://github.com/Narenderchary85/BlogNest_F/blob/main/public/myprofile.png)
+![Alt Text](https://github.com/Narenderchary85/TravelEasy/blob/main/public/Checkout.png)
 
-<h1>Edit Profile</h1>
+<h1>Confirm Booking</h1>
 
-![Alt Text](https://github.com/Narenderchary85/BlogNest_F/blob/main/public/editprofile.png)
+![Alt Text](https://github.com/Narenderchary85/TravelEasy/blob/main/public/Checkout2.png)
 
-<h1>Bookmarks</h1>
+<h1>Booking Confirmed</h1>
 
-![Alt Text](https://github.com/Narenderchary85/BlogNest_F/blob/main/public/bookmarks.png)
+![Alt Text](https://github.com/Narenderchary85/TravelEasy/blob/main/public/Bookingconfirm.png)
 
 ## Installation and Setup
 
@@ -32,8 +32,7 @@
 
 1. **Clone the Backend Repository:**
    ```bash
-   git clone https://github.com/Narenderchary85/BlogNest_backend
-   cd BlogNest_backend
+   git clone https://github.com/Narenderchary85/TravelEasy_B
    
 2.  **Install Dependencies:**
      ```bash
@@ -44,17 +43,9 @@
       PORT=1000
       MONGO_URL=mongodb://localhost:27017/blogwave
       KEY=your_super_secret_jwt_key_here
-      CLOUDINARY_CLOUD_NAME=your_cloudinary_cloud_name
-      CLOUDINARY_API_KEY=your_cloudinary_api_key
-      CLOUDINARY_API_SECRET=your_cloudinary_api_secret
       FRONTEND_URL=http://localhost:5173
-4. **Cloudinary Setup:**
-     ```bash
-        Create a free account at Cloudinary
-        Get your Cloud Name, API Key, and API Secret from the dashboard
-        Add them to your backend .env file
      
-5. **Start the Backend Server:**
+4. **Start the Backend Server:**
      ```bash
           npm start
           The backend will run on: http://localhost:1000
@@ -63,7 +54,7 @@
 
 1. **Clone the Frontend Repository:**
      ```bash
-      git clone https://github.com/Narenderchary85/BlogNest
+      git clone https://github.com/Narenderchary85/TravelEasy
       cd folder-name
 2. **Install Dependencies:**
      ```bash
