@@ -4,7 +4,7 @@
   
 <h1>Home Page</h1>
 
-![Alt Text](https://github.com/Narenderchary85/TravelEasy/blob/main/public/Homepage.Homepng)
+![Alt Text](https://github.com/Narenderchary85/TravelEasy/blob/main/public/Homepage.png)
 
 <h1>Details</h1>
 
